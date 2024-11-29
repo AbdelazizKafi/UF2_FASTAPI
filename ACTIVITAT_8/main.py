@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Response
 from pydantic import BaseModel
 from typing import Optional
 
@@ -10,12 +10,13 @@ class Item(BaseModel):
     description: str
     price: float
     in_stock: bool
-    discount: Optional[float] = None  
+    discount: Optional[float] = None
+
 
 fake_db = {
-    1: {"name": "Element A", "description": "Descripció A", "price": 100.0, "in_stock": True, "discount": 10.0},
-    2: {"name": "Element B", "description": "Descripció B", "price": 200.0, "in_stock": False, "discount": None},
-    3: {"name": "Element C", "description": "Descripció C", "price": 300.0, "in_stock": True, "discount": 5.0}
+    1: {"name": "Element A", "description": "Descripció A", "preu": 100.0, "in_stock": True},
+    2: {"name": "Element B", "description": "Descripció B", "preu": 200.0, "in_stock": False},
+    3: {"name": "Element C", "description": "Descripció C", "preu": 300.0, "in_stock": True}
 }
 
 @app.get("/")
@@ -23,11 +24,12 @@ def read_root():
     return {"message": "Benvingut a la pàgina inicial"}
 
 @app.get("/item/{item_id}")
-def get_item(item_id: int):
-    
+def get_item(item_id: int, response: Response):
+
     if item_id not in fake_db:
-        
-        raise HTTPException(status_code=404, detail=f"Item amb ID {item_id} no trobat")
+
+        response.status_code = 404
+        return {"detail": f"Item amb ID {item_id} no trobat"}
     return fake_db[item_id]
 
 @app.get("/items/")
