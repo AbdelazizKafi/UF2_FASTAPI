@@ -13,8 +13,12 @@ EX 2 WEB
 ![image](https://github.com/user-attachments/assets/79b6619f-f75b-4367-84f1-2ea3c4291556)
 ![image](https://github.com/user-attachments/assets/bdace306-f1e4-4806-80cf-34264ad68204)
 
-EX 2 POSTMAN
+EX 9 POSTMAN
 =============
+Amb postman només tinc que utilitzar la funció GET ja que només volem veure les dades que surten. Utilitzo la URL http://127.0.0.1:8000/users/
+i surt el resultat correctament.
+
+![image](https://github.com/user-attachments/assets/0b99a861-6fe3-40cd-bfa0-8bfbddf8166e)
 
 
 
