@@ -10,7 +10,19 @@ Es mostren els 10 primers registres per assegurar-se.
 
 ENDPOINT 1:
 En entrar a http://127.0.0.1:8000/docs, selecciono l'endpoint /penjat/tematica/opcions i al fer el Try out i execute es mostren les 5 temàtiques de manera correcta.
+
 ![image](https://github.com/user-attachments/assets/04b49926-feae-4ebc-8c10-9354df7e6125)
+
+ENDPOINT 2:
+En entrar a http://127.0.0.1:8000/docs, selecciono l'endpoint /penjat/tematica/{option} i faig el Try out amb el nom d'una temàtica que en aquest cas és Navegació.
+Es mostra la paraula Goleta.
+
+![image](https://github.com/user-attachments/assets/adb707dd-5dd4-4f24-b7fb-d3b185b67ef1)
+
+Com es pot veure, al buscar la paraula al document Excel, surt amb la seva temàtica Navegació.
+
+![image](https://github.com/user-attachments/assets/56d2ba69-f410-48a2-85e4-6906b0ee6417)
+
 
 
 
