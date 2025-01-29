@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joc d'Adivinar la Paraula</title>
+    <link rel="stylesheet" href="css/Estils.css"> 
+    <script src="codi.js" defer></script> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Joc d'Adivinar la Paraula</h1>
+        </header>
+        <main>
+            <div class="game-settings">
+                <div style="position: relative; display: inline-block;">
+                    <input type="text" id="userGuess" placeholder="Introdueix una paraula" style="padding-right: 30px;">
+                    <span id="togglePassword" style="position: absolute">👁️</span>
+                </div>
+                <button id="startGameButton">Començar partida</button>
+            </div>
+            <div id="wordDisplay" class="word-display">Començar partida</div>
+            <div class="stats">
+                <h2>Jugador 1</h2>
+                <p>Punts partides actuals: <span id="currentScore">0</span></p>
+                <p>Total partides: <span id="totalGames">0</span></p>
+                <p>Partides guanyades: <span id="gamesWon">0</span></p>
+                <p>Partida amb més punts: <span id="bestGame">-</span></p>
+            </div>
+            <div id="keyboard" class="keyboard">
+            </div>
+        </main>
+    </div>
+</body>
+</html>
