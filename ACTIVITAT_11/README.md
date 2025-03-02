@@ -6,6 +6,8 @@ Posteriorment creo les quatre tables.
 
 ![image](https://github.com/user-attachments/assets/87bcffd5-308d-4868-8fe0-b5d832e8f40a)
 
+*He fet tot el treball amb Node, per comprobar el funcionament del backend s'ha de fer un node server.js a la terminal per a que els endpoints siguin funcionals*
+
 Pàgina principal amb els primers dos Endpoints, el botó començar partida i el text començar partida.
 
 ![image](https://github.com/user-attachments/assets/fc47cffa-4979-472a-a467-a2c18a3dcc30)
