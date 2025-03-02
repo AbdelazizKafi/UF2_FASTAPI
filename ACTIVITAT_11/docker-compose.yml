@@ -1,0 +1,27 @@
+services:
+  db:
+    image: postgres:13
+    container_name: db_activitat11  # <- Este nombre es único para la DB
+    environment:
+      - POSTGRES_DB=activitat11
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=pass
+    ports:
+      - "5434:5432"
+    volumes:
+      - local_pgdata:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin_activitat11  # <- Cambia este nombre para evitar conflictos
+    ports:
+      - "8080:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: 2024_abdelaziz.kafi@iticbcn.cat
+      PGADMIN_DEFAULT_PASSWORD: AKAT2016
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+
+volumes:
+  local_pgdata:
+  pgadmin-data:
