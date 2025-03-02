@@ -6,7 +6,9 @@ Posteriorment creo les quatre tables.
 
 ![image](https://github.com/user-attachments/assets/87bcffd5-308d-4868-8fe0-b5d832e8f40a)
 
+Pàgina principal amb els primers dos Endpoints, el botó començar partida i el text començar partida.
 
+![image](https://github.com/user-attachments/assets/fc47cffa-4979-472a-a467-a2c18a3dcc30)
 
 Es pot veure l'endpoint del botó començar partida.
 
@@ -15,6 +17,8 @@ Es pot veure l'endpoint del botó començar partida.
 Cada vegada que no s'encerta una lletra, la imatge canvia.
 
 ![image](https://github.com/user-attachments/assets/3b2f574d-acdb-42a3-b5aa-4291ac0b3f89)
+
+
 
 
 
