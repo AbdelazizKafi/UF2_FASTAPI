@@ -1,0 +1,76 @@
+/* Estils generals */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #cce5ff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    color: #004085;
+}
+
+/* Estils específics del joc */
+.game-settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.word-display {
+    text-align: center;
+    font-size: 24px;
+    background-color: #e2e3e5;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.stats {
+    background-color: #f8d7da;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.stats h2 {
+    margin: 0 0 10px 0;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    gap: 5px;
+    justify-items: center;
+}
+
+.keyboard button {
+    background-color: #d4edda;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.keyboard button:hover {
+    background-color: #c3e6cb;
+}
+
+.keyboard button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
