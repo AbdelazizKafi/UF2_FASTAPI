@@ -1,7 +1,7 @@
 services:
   db:
     image: postgres:13
-    container_name: db_activitat11  # <- Este nombre es único para la DB
+    container_name: db_activitat11 
     environment:
       - POSTGRES_DB=activitat11
       - POSTGRES_USER=user
@@ -13,7 +13,7 @@ services:
 
   pgadmin:
     image: dpage/pgadmin4
-    container_name: pgadmin_activitat11  # <- Cambia este nombre para evitar conflictos
+    container_name: pgadmin_activitat11  
     ports:
       - "8080:80"
     environment:
